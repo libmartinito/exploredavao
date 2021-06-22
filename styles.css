@@ -1,0 +1,706 @@
+html {
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.1);
+  font-size: 1em;
+  background-color: #fff;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  line-height: 1.5;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: grid;
+  justify-items: center;
+  color: #313639;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ovo", serif;
+  letter-spacing: -0.02em;
+}
+p {
+  font-size: 1em;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+a {
+  font-family: "Ovo", serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/davao.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-header {
+  display: grid;
+  justify-items: center;
+}
+.home-header a {
+  color: #f8f8ff;
+}
+.home-title {
+  line-height:0%;
+  margin-top: 1em;
+  padding-top: 1em;
+  font-size: 5.38em;
+}
+nav {
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+  width: auto;
+  font-family: "Ovo", serif;
+}
+nav a {
+  color: #f8f8ff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.why-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/why.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+  border: 1em;
+}
+.learn-more {
+  max-width: 60em;
+  height: 100vh;
+  display: flex;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  background-color:#fff;
+}
+.learn-more-1,
+.learn-more-2 {
+  flex: 50%;
+  box-sizing: border-box;
+  border: 1em solid;
+  background-color:#fff;
+  border-color: #fff;
+}
+.learn-more h2 {
+  line-height: 0%;
+  margin-top: 0.8em;
+  padding-top: 0.8em;
+}
+.why-copy a {
+  color: #ff6961;
+}
+mark.important {
+  color:#313639;
+  font-weight: 600;
+  background: none;
+}
+
+.packages {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/packages.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.packages-header {
+  width: 100%;
+  color: #313639;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+.packages-header,
+.packages-body {
+  max-width: 50em;
+}
+.packages-title {
+  font-size: 5.38em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.packages-body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1em;
+}
+.card {
+  width: 16em;
+  height: 16em;
+  background-color: rgb(248,248,255,0.5);
+  border-radius: 0.2em;
+}
+.card a {
+  text-decoration: none;
+  color: #313639;
+}
+.card-image {
+  background-size: cover;
+  height: 8em;
+}
+.city-img {
+  background-image: url("./images/the-city.jpg");
+}
+.outdoors-img {
+  background-image: url("./images/the-outdoors.jpg");
+}
+.seascape-img {
+  background-image: url("./images/the-seascape.jpg");
+}
+.card-article {
+  box-sizing: border-box;
+  margin: 0.3em 0.3em;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 500;
+}
+.card-header {
+  display: grid;
+  place-items: center;
+  font-family: "Ovo", serif;
+  font-weight: 700;
+}
+.card {
+  box-shadow: 0 5px 10px rgba(58, 58, 59, 0.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.city {
+  width: 100%;
+  min-height: 25em;
+  height: 50vh;
+  background-image: url("./images/the-city-header.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.city-header {
+  width: 100%;
+  max-width: 50em;
+  color: #f8f8ff;
+}
+.city-header-title {
+  font-size: 5.38em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.city-attractions {
+  width: 100%;
+  max-width: 50em;
+}
+.city-attractions h2 {
+  font-size: 3.84em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.city-attractions h3 {
+  font-size: 2.74em;
+  font-weight: 700;
+  line-height: 0em;
+  padding-top: 1em;
+}
+.lon-wa {
+  background-image: url("./images/city/lon-wa.jpg");
+}
+.museo-davao {
+  background-image: url("./images/city/museo-davao.png")
+}
+.jacks-resort {
+  background-image: url("./images/city/jacks-ridge-resort.jpg")
+}
+.gap-farm {
+  background-image: url("./images/city/gap-farm.jpg")
+}
+.san-pedro {
+  background-image: url("./images/city/san-pedro-cathedral.JPG");
+}
+.cacao-city {
+  background-image: url("./images/city/cacao-city.jpg")
+}
+.kadayawan-village {
+  background-image: url("./images/city/kadayawan-village.jpg");
+}
+.orchid-farm {
+  background-image: url("./images/city/orchid-farm.jpg");
+}
+.fruit-stand {
+  background-image: url("./images/city/magsaysay-fruitstand.jpg");
+}
+.city-attractions-img {
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+  box-shadow: 0 5px 10px rgba(58, 58, 59, 0.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.city-add-info {
+  display: flex;
+  justify-content: space-around;
+  width: 50em;
+  margin-top: 8em;
+}
+.city-inclusions,
+.city-to-bring {
+  width: 16em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1em 2em;
+  background-color: #f8f8ff;
+  box-shadow: 0 5px 10px rgba(58, 58, 59, 0.05), 0 15px 40px rgba(166,173,201,.2);
+  border-radius: 0.2em;
+}
+.city-inclusions ul,
+.city-to-bring ul {
+  padding-left: 0;
+}
+.city-inclusions ul li,
+.city-to-bring ul li {
+  list-style-position: inside;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 500;
+}
+.city-inclusions h3,
+.city-to-bring h3 {
+  font-size: 1.96em;
+  font-weight: 700;
+  line-height: 0%;
+}
+.city-pricing {
+  width: 100%;
+  min-height: 25em;
+  height: 50vh;
+  background-image: url("./images/the-city-header.jpg");
+  background-size: cover;
+  background-position: bottom;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+}
+.city-pricing-copy {
+  width: 100%;
+  max-width: 50em;
+  color: #f8f8ff;
+}
+.city-pricing-title {
+  font-size: 5.38em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.city-pricing-copy a {
+  text-decoration: none;
+  color:#ff6961;
+  font-weight: 700;
+  font-size: 2.74em;
+}
+.outdoors {
+  width: 100%;
+  min-height: 25em;
+  height: 50vh;
+  background-image: url("./images/the-outdoors-header.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.outdoors-header {
+  width: 100%;
+  max-width: 50em;
+  color: #f8f8ff;
+}
+.outdoors-header-title {
+  font-size: 5.38em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.outdoors-attractions {
+  width: 100%;
+  max-width: 50em;
+}
+.outdoors-attractions h2 {
+  font-size: 3.84em;
+  font-weight: 700;
+  line-height: 0em;
+  padding-top: 1em;
+}
+.outdoors-attractions h3 {
+  font-size: 2.74em;
+  font-weight: 700;
+  line-height: 0em;
+  padding-top: 1em;
+}
+.outdoors-attractions h4 {
+  font-size: 1.96em;
+  font-weight: 700;
+  line-height: 0em;
+  padding-top: 1em;
+}
+
+.dbone {
+  background-image: url("./images/outdoors/wildlife/dbone.jpg");
+}
+.crocodile-park {
+  background-image: url("./images/outdoors/wildlife/crocodile-park.jpg")
+}
+.davao-butterfly-house {
+  background-image: url("./images/outdoors/wildlife/davao-butterfly-house.jpg")
+}
+.tribu{
+  background-image: url("./images/outdoors/wildlife/tribu.jpeg")
+}
+.eden {
+  background-image: url("./images/outdoors/nature/eden.jpg")
+}
+.eagle-center {
+  background-image: url("./images/outdoors/nature/eagle-center.jpg")
+}
+.malagos{
+  background-image: url("./images/outdoors/nature/malagos.jpg")
+}
+.outdoors-attractions-img {
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+  box-shadow: 0 5px 10px rgba(58, 58, 59, 0.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.outdoors-add-info {
+  display: flex;
+  justify-content: space-around;
+  width: 50em;
+  margin-top: 8em;
+}
+.outdoors-inclusions,
+.outdoors-to-bring {
+  width: 16em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1em 2em;
+  background-color: #f8f8ff;
+  box-shadow: 0 5px 10px rgba(58, 58, 59, 0.05), 0 15px 40px rgba(166,173,201,.2);
+  border-radius: 0.2em;
+}
+.outdoors-inclusions ul,
+.outdoors-to-bring ul {
+  padding-left: 0;
+}
+.outdoors-inclusions ul li,
+.outdoors-to-bring ul li {
+  list-style-position: inside;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 500;
+}
+.outdoors-inclusions h3,
+.outdoors-to-bring h3 {
+  font-size: 1.96em;
+  font-weight: 700;
+  line-height: 0%;
+}
+.outdoors-pricing {
+  width: 100%;
+  min-height: 25em;
+  height: 50vh;
+  background-image: url("./images/the-outdoors-header.jpg");
+  background-size: cover;
+  background-position: bottom;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+}
+.outdoors-pricing-copy {
+  width: 100%;
+  max-width: 50em;
+  color: #f8f8ff;
+}
+.outdoors-pricing-title {
+  font-size: 5.38em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.outdoors-pricing-copy a {
+  text-decoration: none;
+  color:#ff6961;
+  font-weight: 700;
+  font-size: 2.74em;
+}
+.seascape {
+  width: 100%;
+  min-height: 25em;
+  height: 50vh;
+  background-image: url("./images/the-seascape-header.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seascape-header {
+  width: 100%;
+  max-width: 50em;
+  color: #f8f8ff;
+}
+.seascape-header-title {
+  font-size: 5.38em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.seascape-attractions {
+  width: 100%;
+  max-width: 50em;
+}
+.seascape-attractions h2 {
+  font-size: 3.84em;
+  font-weight: 700;
+  line-height: 0em;
+  padding-top: 1em;
+}
+.seascape-attractions h3 {
+  font-size: 2.74em;
+  font-weight: 700;
+  line-height: 0em;
+  padding-top: 1em;
+}
+.seascape-attractions h4 {
+  font-size: 1.96em;
+  font-weight: 700;
+  line-height: 0em;
+  padding-top: 1em;
+}
+
+.coral-garden {
+  background-image: url("./images/seascape/talikud/coral-garden.jpg");
+}
+.angels-cove {
+  background-image: url("./images/seascape/talikud/angels-cove.jpg")
+}
+.babu {
+  background-image: url("./images/seascape/talikud/babu.jpg")
+}
+.pearl-farm{
+  background-image: url("./images/seascape/samal/pearl-farm.jpg")
+}
+.mariculture {
+  background-image: url("./images/seascape/samal/mariculture.jpg")
+}
+.kaputian {
+  background-image: url("./images/seascape/samal/kaputian.JPG")
+}
+.malipano{
+  background-image: url("./images/seascape/samal/malipano.jpg")
+}
+.wishing{
+  background-image: url("./images/seascape/samal/wishing-island.jpg")
+}
+.seascape-attractions-img {
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+  box-shadow: 0 5px 10px rgba(58, 58, 59, 0.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.seascape-add-info {
+  display: flex;
+  justify-content: space-around;
+  width: 50em;
+  margin-top: 8em;
+}
+.seascape-inclusions,
+.seascape-to-bring {
+  width: 16em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1em 2em;
+  background-color: #f8f8ff;
+  box-shadow: 0 5px 10px rgba(58, 58, 59, 0.05), 0 15px 40px rgba(166,173,201,.2);
+  border-radius: 0.2em;
+}
+.seascape-inclusions ul,
+.seascape-to-bring ul {
+  padding-left: 0;
+}
+.seascape-inclusions ul li,
+.seascape-to-bring ul li {
+  list-style-position: inside;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 500;
+}
+.seascape-inclusions h3,
+.seascape-to-bring h3 {
+  font-size: 1.96em;
+  font-weight: 700;
+  line-height: 0%;
+}
+.seascape-pricing {
+  width: 100%;
+  min-height: 25em;
+  height: 50vh;
+  background-image: url("./images/the-seascape-header.jpg");
+  background-size: cover;
+  background-position: bottom;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+}
+.seascape-pricing-copy {
+  width: 100%;
+  max-width: 50em;
+  color: #f8f8ff;
+}
+.seascape-pricing-title {
+  font-size: 5.38em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.seascape-pricing-copy a {
+  text-decoration: none;
+  color:#ff6961;
+  font-weight: 700;
+  font-size: 2.74em;
+}
+.pricing {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(19,21,22,0.5),rgba(19,21,22,0.5)),url("./images/pricing.jpg");
+  background-position: bottom;
+  background-size: cover;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  color:#f8f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+.pricing-header,
+.pricing-body {
+  max-width: 50em;
+}
+.pricing-title {
+  font-size: 5.38em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.pricing-body {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  margin-top: 1em;
+}
+.pricing-card {
+  width: 14em;
+  height: 14em;
+  background-color: rgb(21,27,31,0.8);
+  border-radius: 0.2em;
+  box-shadow: 0 5px 10px rgba(58, 58, 59, 0.05), 0 15px 40px rgba(166,173,201,.2);
+  padding: 0.5em 1em;
+}
+.pricing-card a {
+  text-decoration: none;
+  color: #313639;
+}
+.pricing-card-header {
+  font-weight: 700;
+  font-size: 1.96em;
+}
+.pricing-card-header a {
+  text-decoration: none;
+  color: #ff6961;
+}
+.tour-header {
+  font-size: 1.4em;
+  line-height: 0em;
+}
+.pricing-call-to-action {
+  width: 100%;
+  max-width: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pricing-call-to-action p {
+  font-size: 1.96em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.pricing-call-to-action p a {
+  color: #ff6961;
+}
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(19,21,22,0.5),rgba(19,21,22,0.5)),url("./images/contact.jpg");
+  background-position: bottom;
+  background-size: cover;
+  box-sizing: border-box;
+  border: 1em solid;
+  border-color: #fff;
+  color:#f8f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-header,
+.contact-body {
+  width: 100%;
+  max-width: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+.contact-header h1 {
+  font-size: 5.38em;
+  font-weight: 700;
+  line-height: 0em;
+}
+.contact-body h2 {
+  font-size: 2.74;
+  font-weight: 700;
+  line-height: 0em;
+}
