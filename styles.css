@@ -322,7 +322,7 @@ mark.important {
   width: 100%;
   min-height: 25em;
   height: 50vh;
-  background-image: url("./images/the-outdoors-header.jpg");
+  background-image: linear-gradient(rgba(19,21,22,0.5),rgba(19,21,22,0.5)),url("./images/the-outdoors-header.jpg");
   background-size: cover;
   box-sizing: border-box;
   border: 1em solid;
@@ -428,7 +428,7 @@ mark.important {
   width: 100%;
   min-height: 25em;
   height: 50vh;
-  background-image: url("./images/the-outdoors-header.jpg");
+  background-image: linear-gradient(rgba(19,21,22,0.5),rgba(19,21,22,0.5)),url("./images/the-outdoors-header.jpg");
   background-size: cover;
   background-position: bottom;
   box-sizing: border-box;
@@ -646,7 +646,7 @@ mark.important {
 }
 .pricing-card-header {
   font-weight: 700;
-  font-size: 1.96em;
+  font-size: 1.4em;
 }
 .pricing-card-header a {
   text-decoration: none;
@@ -705,9 +705,6 @@ mark.important {
   line-height: 0em;
 }
 @media only screen and (max-width: 1007px) {
-  body {
-    width: 100vw;
-  }
   .learn-more {
     display:flex;
     flex-direction: column;
@@ -717,5 +714,278 @@ mark.important {
   .learn-more-1,
   .learn-more-2 {
     width: 100%;
+  }
+  .learn-more-1 {
+    min-height: 15em;
+  }
+  .packages {
+    height: 100%;
+  }
+  .packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .packages-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+  .packages-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .card {
+    width: 50%;
+    height: auto;
+    margin: 1em;
+  }
+  .pricing {
+    height: 100%;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .pricing-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+  .pricing-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .pricing-card {
+    width: 50%;
+    height: auto;
+    margin: 1em;
+  }
+  .pricing-call-to-action{
+    display: block;
+    width: 80%;
+    height: 10em;
+  }
+  .pricing-call-to-action p{
+    font-size: 1.4em;
+    line-height: normal;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+  .contact-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+  .city {
+    height: 60vh;
+  }
+  .city,
+  .city-attractions,
+  .city-add-info,
+  .city-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .city-header {
+    width: 80%;
+  }
+  .city-header-title {
+    font-size: 3.84em;
+    line-height: 0.8;
+  }
+  .city-attractions-img {
+    width: 80%;
+  }
+  .city-attractions h2 {
+    font-size: 2.74em;
+    line-height: 0.5;
+  }
+  .city-attractions h3 {
+    font-size: 1.96em;
+    width: 80%;
+    line-height: 1;
+  }
+  .city-pricing-copy {
+    width: 80%;
+  }
+  .city-inclusions,
+  .city-to-bring {
+    margin: 1em;
+  }
+  .outdoors {
+    height: 60vh;
+  }
+  .outdoors,
+  .outdoors-attractions,
+  .outdoors-add-info,
+  .outdoors-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .outdoors-header {
+    width: 80%;
+  }
+  .outdoors-attractions p {
+    width: 80%;
+  }
+  .outdoors-header-title {
+    font-size: 3.84em;
+    line-height: 0.8;
+  }
+  .outdoors-attractions-img {
+    width: 80%;
+  }
+  .outdoors-attractions h2 {
+    font-size: 2.74em;
+    line-height: 0.5;
+  }
+  .outdoors-attractions h3 {
+    font-size: 1.96em;
+    width: 80%;
+    line-height: 1;
+  }
+  .outdoors-attractions h4 {
+    font-size: 1.4em;
+    width: 80%;
+    line-height: 1;
+  }
+  .outdoors-pricing-copy {
+    width: 80%;
+  }
+  .outdoors-inclusions,
+  .outdoors-to-bring {
+    margin: 1em;
+  }
+  .seascape {
+    height: 60vh;
+  }
+  .seascape,
+  .seascape-attractions,
+  .seascape-add-info,
+  .seascape-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .seascape-header {
+    width: 80%;
+  }
+  .seascape-attractions p {
+    width: 80%;
+  }
+  .seascape-attractions h2 {
+    width: 80%;
+    line-height: 1.2;
+  }
+  .seascape-header-title {
+    font-size: 3.84em;
+    line-height: 0.8;
+  }
+  .seascape-attractions-img {
+    width: 80%;
+  }
+  .seascape-attractions h2 {
+    font-size: 2.74em;
+    line-height: 0.5;
+  }
+  .seascape-attractions h3 {
+    font-size: 1.96em;
+    width: 80%;
+    line-height: 1;
+  }
+  .seascape-attractions h4 {
+    font-size: 1.4em;
+    width: 80%;
+    line-height: 1;
+  }
+  .seascape-pricing-copy {
+    width: 80%;
+  }
+  .seascape-inclusions,
+  .seascape-to-bring {
+    margin: 1em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home nav,
+  .packages nav {
+    font-size: 0.9em;
+  }
+  .packages-title {
+    font-size: 3.84em;
+  }
+  .card {
+    width: 90%;
+    margin: 1em;
+  }
+  .pricing nav {
+    font-size: 0.9em;
+  }
+  .pricing-title {
+    font-size: 3.84em;
+  }
+  .pricing-card {
+    width: 80%;
+    margin: 1em;
+  }
+  .contact nav {
+    font-size: 0.9em;
+  }
+  .contact-header h1 {
+    font-size: 3.84em;
+    line-height: 1;
+  }
+  .city nav {
+    font-size: 0.9em;
+  }
+  .city-attractions-img {
+    height: 80vw;
+  }
+  .city-pricing-title {
+    font-size: 3.84em;
+  }
+  .outdoors nav {
+    font-size: 0.9em;
+  }
+  .outdoors-attractions-img {
+    height: 80vw;
+  }
+  .outdoors-pricing-title {
+    font-size: 3.84em;
+  }
+  .seascape nav {
+    font-size: 0.9em;
+  }
+  .seascape-attractions-img {
+    height: 80vw;
+  }
+  .seascape-pricing-title {
+    font-size: 3.84em;
   }
 }
